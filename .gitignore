@@ -1,0 +1,16 @@
+# Node Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Pear/Bare Runtime Artifacts
+pear-storage/
+.pear/
+
+# Project Specific P2P Storage (Do not commit!)
+storage-seeder/
+storage-client/
+
+# System Files
+.DS_Store
+Thumbs.db

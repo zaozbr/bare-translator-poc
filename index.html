@@ -1,0 +1,74 @@
+< !DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        font - family: sans - serif;
+        background: #222;
+        color: #fff;
+        padding: 20 px;
+        text - align: center;
+    }
+
+    input {
+        padding: 10 px;
+        width: 60 %;
+        border - radius: 5 px;
+        border: none;
+    }
+
+    button {
+        padding: 10 px 20 px;
+        background: #50fa7b;
+        border: none;
+        cursor: pointer;
+        border - radius: 5 px;
+        font - weight: bold;
+    }
+
+    .status {
+        color: #aaa;
+        font - size: 0.9e m;
+        margin - top: 10 px;
+    }
+
+    #result {
+        margin - top: 30 px;
+        font - size: 2e m;
+        color: #50fa7b;
+        font - weight: bold;
+    }
+
+    #setup {
+        margin - bottom: 20 px;
+        border - bottom: 1 px solid #444;
+        padding - bottom: 20 px;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Bare Translator(PoC)</h1>
+
+    <!-- Connection Setup -->
+    <div id="setup">
+        <p>Step 1: Connect to P2P Network</p>
+        <input type="text" id="driveKey" placeholder="Paste Seeder Drive Key Here...">
+        <button onclick="connectToSwarm()">Connect</button>
+        <div id="connectionStatus" class="status">Waiting for key...</div>
+    </div>
+
+    <!-- Translation UI -->
+    <div id="app" style="display:none;">
+        <p>Step 2: Translate (Mock words: hello, world, team)</p>
+        <input type="text" id="inputText" placeholder="Type a word...">
+        <button onclick="translateText()">Translate</button>
+        <div id="result"></div>
+    </div>
+
+    <!-- Import App Logic -->
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
+</body>

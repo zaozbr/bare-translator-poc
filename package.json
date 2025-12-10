@@ -1,0 +1,21 @@
+{
+    "name": "bare-translator-poc",
+    "version": "1.0.0",
+    "main": "index.html",
+    "type": "module",
+    "pear": {
+        "name": "bare-translator",
+        "type": "desktop",
+        "gui": {
+            "backgroundColor": "#202020",
+            "height": 500,
+            "width": 700
+        }
+    },
+    "dependencies": {
+        "hyperswarm": "^4.0.0",
+        "hyperdrive": "^11.0.0",
+        "corestore": "^6.0.0",
+        "localdrive": "^1.0.0"
+    }
+}
